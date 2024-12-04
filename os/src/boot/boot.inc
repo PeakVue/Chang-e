@@ -1,6 +1,12 @@
 ; os/src/boot/boot.inc
 LOADER_BASE_ADDR equ 0x600
 LOADER_START_SECTOR equ 0x1
+PAGE_DIR_TABLE_POS equ 0x100000
+PG_P  equ   1b
+PG_RW_R	 equ  00b 
+PG_RW_W	 equ  10b 
+PG_US_S	 equ  000b 
+PG_US_U	 equ  100b 
 
 ;--------------   gdt描述符属性  -------------
 DESC_G_4K   equ	  1_00000000000000000000000b    ; 段界限单位：4KB
