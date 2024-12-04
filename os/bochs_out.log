@@ -34,7 +34,7 @@
 00000000000i[IMG   ] Disk image modules
 00000000000i[IMG   ]   flat concat sparse dll growing undoable volatile vmware3
 00000000000i[IMG   ]   vmware4 vbox vpc vvfat
-00000000000i[MEM0  ] allocated memory at 0x7f3f353dd010. after alignment, vector=0x7f3f353de000
+00000000000i[MEM0  ] allocated memory at 0x7f205e3dd010. after alignment, vector=0x7f205e3de000
 00000000000i[MEM0  ] 32.00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
 00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('/home/deepin/bochs/share/bochs/BIOS-bochs-latest')
@@ -45,7 +45,7 @@
 00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS  ] Using local time for initial clock
-00000000000i[CMOS  ] Setting initial clock to: Wed Dec  4 13:22:32 2024 (time0=1733289752)
+00000000000i[CMOS  ] Setting initial clock to: Wed Dec  4 15:27:27 2024 (time0=1733297247)
 00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA   ] channel 4 used by cascade
 00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -183,7 +183,7 @@
 00000322306i[BIOS  ] ram_end=32MB
 00000363087i[BIOS  ] Found 1 cpu(s)
 00000376740i[BIOS  ] bios_table_addr: 0x000f9d98 end=0x000fcc00
-00000606876i[XGUI  ] charmap update. Font is 9 x 16
+00000607920i[XGUI  ] charmap update. Font is 9 x 16
 00000704556i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
 00001032491i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x0b
 00001032515i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x09
@@ -216,8 +216,6 @@
 00001537565i[BXVGA ] VBE known Display Interface b0c5
 00001540208i[VBIOS ] VBE Bios $Id: vbe.c 292 2021-06-03 12:24:22Z vruppert $
 00001769001i[BIOS  ] ata0-0: PCHS=121/16/63 translation=none LCHS=121/16/63
-00003392148i[XGUI  ] charmap update. Font is 9 x 16
+00003801580i[XGUI  ] charmap update. Font is 9 x 16
 00005202965i[BIOS  ] IDE time out
 00017178811i[BIOS  ] Booting from 0000:7c00
-02544255571i[      ] Ctrl-C detected in signal handler.
-02544255572i[      ] Ctrl-C detected in signal handler.

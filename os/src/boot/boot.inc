@@ -1,13 +1,19 @@
 ; os/src/boot/boot.inc
 LOADER_BASE_ADDR equ 0x600
-LOADER_START_SECTOR equ 0x1
+LOADER_START_SECTOR equ 1   ; loader的LBA扇区号
+KERNEL_START_SECTOR equ 10  ; kernel的LBA扇区号
+KERNEL_BIN_BASE_ADDR equ 0x70000  ; kernel导入后存放的零时地址
+KERNEL_ENTRY_POINT equ 0xc0001500 ; kernel的入口地址
+
 PAGE_DIR_TABLE_POS equ 0x100000
 PG_P  equ   1b
 PG_RW_R	 equ  00b 
+;--------------   gdt描述符属性  -------------
 PG_RW_W	 equ  10b 
 PG_US_S	 equ  000b 
 PG_US_U	 equ  100b 
-
+;-------------  program type 定义   --------------
+PT_NULL equ 0
 ;--------------   gdt描述符属性  -------------
 DESC_G_4K   equ	  1_00000000000000000000000b    ; 段界限单位：4KB
 DESC_D_32   equ	   1_0000000000000000000000b    ; 有效地址和操作数是 32 位
