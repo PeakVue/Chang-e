@@ -11,8 +11,8 @@ int main(void) {
     // asm volatile("sti");	 
     intr_enable();
     put_str("I am kernel\n");
-    thread_start("k_thread_a", 5, k_thread_a, "argA ");
-    thread_start("k_thread_b", 5, k_thread_b, "argB ");     
+    thread_start("k_thread_a", k_thread_a, "argA ");
+    thread_start("k_thread_b", k_thread_b, "argB ");    
     while (1) ;
     return 0;
 }
