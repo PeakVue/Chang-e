@@ -5,7 +5,7 @@
 
 int main(void) {
     init_all();
-    asm volatile("sti");	     
+    // asm volatile("sti");	     
     while (1) ;
     return 0;
 }
